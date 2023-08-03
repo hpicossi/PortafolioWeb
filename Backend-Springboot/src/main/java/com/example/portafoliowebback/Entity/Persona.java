@@ -1,4 +1,4 @@
-package Entity;
+package com.example.portafoliowebback.Entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;

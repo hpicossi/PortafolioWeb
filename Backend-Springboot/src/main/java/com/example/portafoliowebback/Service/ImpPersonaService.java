@@ -1,8 +1,8 @@
-package Service;
+package com.example.portafoliowebback.Service;
 
-import Entity.Persona;
-import Interface.IPersonaService;
-import Repository.IPersonaRepository;
+import com.example.portafoliowebback.Entity.Persona;
+import com.example.portafoliowebback.Interface.IPersonaService;
+import com.example.portafoliowebback.Repository.IPersonaRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

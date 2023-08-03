@@ -1,6 +1,6 @@
-package Repository;
+package com.example.portafoliowebback.Repository;
 
-import Entity.Persona;
+import com.example.portafoliowebback.Entity.Persona;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

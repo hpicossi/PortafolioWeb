@@ -1,6 +1,6 @@
-package Interface;
+package com.example.portafoliowebback.Interface;
 
-import Entity.Persona;
+import com.example.portafoliowebback.Entity.Persona;
 
 import java.util.List;
 

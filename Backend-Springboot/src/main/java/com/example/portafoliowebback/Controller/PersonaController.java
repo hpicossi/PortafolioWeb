@@ -1,7 +1,7 @@
-package Controller;
+package com.example.portafoliowebback.Controller;
 
-import Entity.Persona;
-import Interface.IPersonaService;
+import com.example.portafoliowebback.Entity.Persona;
+import com.example.portafoliowebback.Interface.IPersonaService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
