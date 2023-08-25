@@ -18,7 +18,7 @@ public class Usuario {
     private int id;
     @NotNull
     @Column(unique = true)
-    private String usuario;
+    private String nombre;
     @NotNull
     private String nombreUsuario;
     @NotNull
@@ -32,9 +32,9 @@ public class Usuario {
     public Usuario() {
     }
 
-    public Usuario(int id, String usuario, String nombreUsuario, String email, String password, Set<Rol> roles) {
+    public Usuario(int id, String nombre, String nombreUsuario, String email, String password, Set<Rol> roles) {
         this.id = id;
-        this.usuario = usuario;
+        this.nombre = nombre;
         this.nombreUsuario = nombreUsuario;
         this.email = email;
         this.password = password;
