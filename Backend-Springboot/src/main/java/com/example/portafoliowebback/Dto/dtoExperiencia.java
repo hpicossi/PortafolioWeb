@@ -1,38 +1,26 @@
-package com.example.portafoliowebback.Entity;
+package com.example.portafoliowebback.Dto;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotBlank;
 
-import javax.xml.crypto.Data;
+public class dtoExperiencia {
 
-@Entity
-public class Experiencia {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private  int id;
+    @NotBlank
     private String nombreExp;
+    @NotBlank
     private String nombreEmpresaExp;
+    @NotBlank
     private String descripcionExp;
+    @NotBlank
     private String aptitudesExp;
 
-    public Experiencia() {
+    public dtoExperiencia() {
     }
 
-    public Experiencia(String nombreExp, String nombreEmpresaExp, String descripcionExp, String aptitudesExp) {
+    public dtoExperiencia(String nombreExp, String nombreEmpresaExp, String descripcionExp, String aptitudesExp) {
         this.nombreExp = nombreExp;
         this.nombreEmpresaExp = nombreEmpresaExp;
         this.descripcionExp = descripcionExp;
         this.aptitudesExp = aptitudesExp;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getNombreExp() {

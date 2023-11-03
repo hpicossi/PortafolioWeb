@@ -1,22 +1,28 @@
 package com.example.portafoliowebback.Entity;
 
 import jakarta.persistence.Entity;
-import lombok.Getter;
-import lombok.Setter;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 @Entity
 public class Educacion {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String nombreE;
     private String descripcionE;
 
+    private String actitudE;
+
     public Educacion() {
     }
 
-    public Educacion(String nombreE, String descripcionE) {
+    public Educacion(String nombreE, String descripcionE, String actitudesE) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
+        this.actitudE = actitudesE;
     }
 
     public long getId() {
@@ -41,5 +47,13 @@ public class Educacion {
 
     public void setDescripcionE(String descripcionE) {
         this.descripcionE = descripcionE;
+    }
+
+    public String getActitudE() {
+        return actitudE;
+    }
+
+    public void setActitudE(String actitudE) {
+        this.actitudE = actitudE;
     }
 }

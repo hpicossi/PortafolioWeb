@@ -9,7 +9,5 @@ import java.util.Optional;
 @Repository
 public interface REducacion extends JpaRepository<Educacion, Integer> {
     public Optional<Educacion> findByNombreE(String nombreE);
-    public Optional<Educacion> findByDescripcionE(String DescripcionE);
     public boolean existsByNombreE(String nombreE);
-    public boolean existsByDescripcionE(String descripcionE);
 }
