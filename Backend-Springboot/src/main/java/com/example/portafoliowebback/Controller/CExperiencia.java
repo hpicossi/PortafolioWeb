@@ -13,7 +13,7 @@ import org.thymeleaf.util.StringUtils;
 import java.util.List;
 
 @RestController
-@RequestMapping("experiencia")
+@RequestMapping("/experiencia")
 @CrossOrigin(origins = "http://localhost:4200")
 
 public class CExperiencia {
