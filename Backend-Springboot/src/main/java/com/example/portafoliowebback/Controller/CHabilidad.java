@@ -40,7 +40,7 @@ public class CHabilidad {
             return new ResponseEntity(new Mensaje("No existe el ID"), HttpStatus.NOT_FOUND);
         }
         sHabilidad.delete(id);
-        return new ResponseEntity(new Mensaje("Habilidad creada"), HttpStatus.OK);
+        return new ResponseEntity(new Mensaje("Habilidad eliminada"), HttpStatus.OK);
     }
 
     @PostMapping("/create")
@@ -70,6 +70,6 @@ public class CHabilidad {
         habilidad.setNombreH(dtohabilidad.getNombreH());
 
         sHabilidad.save(habilidad);
-        return new ResponseEntity(new Mensaje("Habilidad creada"), HttpStatus.OK);
+        return new ResponseEntity(new Mensaje("Habilidad modificada"), HttpStatus.OK);
     }
 }
