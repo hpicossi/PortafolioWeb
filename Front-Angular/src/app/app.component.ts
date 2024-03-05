@@ -6,14 +6,13 @@ import { EducacionComponent } from "./components/educacion/educacion.component";
 import { ConocimientoAptitudesComponent } from "./components/conocimiento-aptitudes/conocimiento-aptitudes.component";
 import { ExperienciaComponent } from "./components/experiencia/experiencia.component";
 import { ProyectosComponent } from "./components/proyectos/proyectos.component";
-import { HttpClientModule } from '@angular/common/http';
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, HeaderComponent, AcercaDeMiComponent, EducacionComponent, ConocimientoAptitudesComponent, ExperienciaComponent, ProyectosComponent, HttpClientModule]
+    imports: [RouterOutlet]
 })
 export class AppComponent {
   title = 'Front-Angular';
