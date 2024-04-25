@@ -9,18 +9,18 @@ import java.sql.Date;
 @Entity
 @Getter
 @Setter
-@Table(name = "educacion")
-public class Educacion {
+@Table(name = "experiencia")
+public class Experiencia {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "nombre_institucion", nullable = false, length = 255)
-    private String nombreInstitucion;
+    @Column(name = "nombre_empresa", nullable = false, length = 255)
+    private String nombreEmpresa;
 
-    @Column(name = "titulo", nullable = false, length = 255)
-    private String titulo;
+    @Column(name = "cargo", nullable = false, length = 255)
+    private String cargo;
 
     @Column(name = "fecha_inicio", nullable = false)
     private Date fechaInicio;
@@ -30,5 +30,8 @@ public class Educacion {
 
     @Column(name = "descripcion", length = 500)
     private String descripcion;
+
+    @Column(name = "tecnologias_herramientas", length = 500)
+    private String tecnologiasHerramientas;
 
 }
