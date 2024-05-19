@@ -9,6 +9,16 @@ import lombok.Setter;
 
 import java.sql.Date;
 
+/**
+ * Represents the work experience of a user.
+ *
+ * This entity class maps to the "experiencia" table in the database and
+ * provides
+ * properties to store information about a user's work experience, such as the
+ * name of the company, the position held, the start and end dates, a
+ * description
+ * of the experience, and the technologies and tools used.
+ */
 @Entity
 @Getter
 @Setter

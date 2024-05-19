@@ -6,6 +6,14 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+/**
+ * Represents a project entity in the application.
+ * 
+ * The `Proyecto` class is an entity that represents a project in the
+ * application.
+ * It has properties for the project's ID, name, image, and description.
+ * The class is annotated with JPA annotations to map it to a database table.
+ */
 @Entity
 @Getter
 @Setter

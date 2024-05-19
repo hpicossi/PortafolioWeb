@@ -9,6 +9,14 @@ import lombok.Setter;
 
 import java.sql.Date;
 
+/**
+ * Represents the educational information of a user.
+ * 
+ * This entity class maps to the "educacion" table in the database and provides
+ * properties to store the details of a user's educational background, such as
+ * the name of the educational institution, the title or degree obtained, the
+ * start and end dates of the education, and an optional description.
+ */
 @Entity
 @Getter
 @Setter

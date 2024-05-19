@@ -6,6 +6,14 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+/**
+ * Represents a user's knowledge or skill.
+ * 
+ * The `Conocimiento` entity represents a single piece of knowledge or skill
+ * that a user has. It includes the name of the knowledge, and an optional image
+ * in JPEG format.
+ * 
+ */
 @Entity
 @Getter
 @Setter
